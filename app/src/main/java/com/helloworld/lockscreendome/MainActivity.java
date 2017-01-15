@@ -4,8 +4,6 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.helloworld.lockscreendome.service.LockScreenService;
-
 
 public class MainActivity extends Activity {
 

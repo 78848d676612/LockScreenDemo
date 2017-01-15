@@ -1,4 +1,4 @@
-package com.helloworld.lockscreendome.service;
+package com.helloworld.lockscreendome;
 
 import android.app.Service;
 import android.content.Intent;
@@ -6,7 +6,6 @@ import android.os.IBinder;
 
 import com.helloworld.lockscreen.LockScreenManager;
 import com.helloworld.lockscreen.LockScreenReceiver;
-import com.helloworld.lockscreendome.TestActivity;
 
 
 public class LockScreenService extends Service {
