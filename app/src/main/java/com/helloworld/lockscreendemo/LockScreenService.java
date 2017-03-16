@@ -1,11 +1,11 @@
-package com.helloworld.lockscreendome;
+package com.helloworld.lockscreendemo;
 
 import android.app.Service;
 import android.content.Intent;
 import android.os.IBinder;
 
-import com.helloworld.lockscreen.LockScreenManager;
-import com.helloworld.lockscreen.LockScreenReceiver;
+import moe.pinkd.lockscreen.LockScreenManager;
+import moe.pinkd.lockscreen.LockScreenReceiver;
 
 
 public class LockScreenService extends Service {

@@ -1,4 +1,4 @@
-package com.helloworld.lockscreen;
+package moe.pinkd.lockscreen;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

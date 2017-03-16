@@ -1,4 +1,4 @@
-package com.helloworld.lockscreendome;
+package com.helloworld.lockscreendemo;
 
 import android.app.Activity;
 import android.content.Intent;

@@ -1,9 +1,9 @@
-package com.helloworld.lockscreendome;
+package com.helloworld.lockscreendemo;
 
 import android.os.Bundle;
 import android.view.WindowManager;
 
-import com.helloworld.lockscreen.LockScreenActivity;
+import moe.pinkd.lockscreen.LockScreenActivity;
 
 public class TestActivity extends LockScreenActivity {
 

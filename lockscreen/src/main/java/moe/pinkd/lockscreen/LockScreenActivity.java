@@ -1,10 +1,8 @@
-package com.helloworld.lockscreen;
+package moe.pinkd.lockscreen;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.WindowManager.LayoutParams;
-
-import com.helloworld.lockscreen.R;
 
 public class LockScreenActivity extends Activity {
 
