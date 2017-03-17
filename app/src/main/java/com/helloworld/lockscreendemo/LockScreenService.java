@@ -19,7 +19,7 @@ public class LockScreenService extends Service {
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
         if (lockScreenManager == null) {
-            lockScreenManager = new LockScreenManager(this, new LockScreenReceiver<>(TestActivity.class));
+            lockScreenManager = new LockScreenManager(this, new LockScreenReceiver(TestActivity.class));
         }
         if (!lockScreenManager.isEnabled()) {
             lockScreenManager.enableLockScreen();

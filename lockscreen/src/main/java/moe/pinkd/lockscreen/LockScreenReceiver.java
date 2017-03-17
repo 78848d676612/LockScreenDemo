@@ -1,16 +1,17 @@
 package moe.pinkd.lockscreen;
 
+import android.app.Activity;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
 
-public class LockScreenReceiver<T extends LockScreenActivity> extends BroadcastReceiver {
+public class LockScreenReceiver extends BroadcastReceiver {
 
     private static final String TAG = "LockScreenReceiver";
-    private Class<T> cls;
+    private Class<? extends Activity> cls;
 
-    public LockScreenReceiver(Class<T> cls) {
+    public LockScreenReceiver(Class<? extends Activity> cls) {
         this.cls = cls;
     }
 

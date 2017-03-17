@@ -1,8 +1,11 @@
 package moe.pinkd.lockscreen;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.view.Window;
+import android.view.WindowManager;
 
 public class LockScreenManager {
 
@@ -25,6 +28,14 @@ public class LockScreenManager {
     public void disableLockScreen() {
         context.unregisterReceiver(lockScreenReceiver);
         isEnabled = false;
+    }
+
+    public static void onCreate(Window window) {
+        window.addFlags(
+                WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD
+                        | WindowManager.LayoutParams.FLAG_SHOW_WHEN_LOCKED
+                        | WindowManager.LayoutParams.FLAG_ALLOW_LOCK_WHILE_SCREEN_ON
+        );
     }
 
     public Context getContext() {
